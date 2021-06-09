@@ -12,7 +12,7 @@ function MainScreen(props) {
   const renderButton = ({ item }) => {
     return (
       <View style={styles.buttonContainer}>
-        <AppButton title={item.title} color="grey" />
+        <AppButton title={item.title} color="light" />
       </View>
     );
   };
@@ -35,7 +35,7 @@ function MainScreen(props) {
         <View style={styles.carouselContainer}>
           <CarouselCards />
         </View>
-        <View>
+        <View style={{ marginLeft: 15 }}>
           <FlatList
             horizontal
             showsHorizontalScrollIndicator={false}
@@ -70,7 +70,7 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   buttonContainer: {
-    paddingHorizontal: 20,
+    paddingHorizontal: 10,
   },
   title: { fontSize: 28, fontWeight: "900" },
   subtitle: { fontSize: 15, color: "#ccc" },
